@@ -34,30 +34,38 @@ export default function Hero() {
                 KR_
               </Box>
               <Box display="flex" alignItems="center">
-                <a href="/#about">
-                  <Text mr="20px" fontWeight="500" fontSize="14px">
-                    About Me
-                  </Text>
-                </a>
-                <a href="/#projects">
-                  <Text mr="20px" fontWeight="500" fontSize="14px">
-                    Projects
-                  </Text>
-                </a>
-                <a href="/#blog">
-                  <Text mr="20px" fontWeight="500" fontSize="14px">
-                    Blog
-                  </Text>
-                </a>
-                <a href="/#contact">
-                  <Button
-                    fontSize="14px"
-                    bg="#03d277"
-                    _hover={{ backgroundColor: "#03d277" }}
-                  >
-                    Contact
-                  </Button>
-                </a>
+                <Link href="/#about">
+                  <a>
+                    <Text mr="20px" fontWeight="500" fontSize="14px">
+                      About Me
+                    </Text>
+                  </a>
+                </Link>
+                <Link href="/#projects">
+                  <a>
+                    <Text mr="20px" fontWeight="500" fontSize="14px">
+                      Projects
+                    </Text>
+                  </a>
+                </Link>
+                <Link href="/#blog">
+                  <a>
+                    <Text mr="20px" fontWeight="500" fontSize="14px">
+                      Blog
+                    </Text>
+                  </a>
+                </Link>
+                <Link href="/#contact">
+                  <a>
+                    <Button
+                      fontSize="14px"
+                      bg="#03d277"
+                      _hover={{ backgroundColor: "#03d277" }}
+                    >
+                      Contact
+                    </Button>
+                  </a>
+                </Link>
               </Box>
             </Box>
           </Container>
