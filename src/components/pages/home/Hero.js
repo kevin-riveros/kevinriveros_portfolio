@@ -101,8 +101,8 @@ export default function Hero() {
                 textAlign="left"
                 mt="20px"
               >
-                I'm a front-end engineer from Lima, Perú. I design, create and
-                support websites and applications for clients and for fun. I
+                I&apos;m a front-end engineer from Lima, Perú. I design, create
+                and support websites and applications for clients and for fun. I
                 love using modern technology to create exceptional user
                 experiences, and always strive to create high quality products.
               </Text>
