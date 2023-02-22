@@ -16,60 +16,8 @@ const inter = Fira_Code({
 });
 export default function Hero() {
   return (
-    <Box w="100%" bg="#1C1C1C" color="#FFFFFF">
+    <Box w="100%" bg="#1C1C1C" color="#FFFFFF" pt="72px">
       <Box>
-        <Box bg="#181A1B">
-          <Container maxW="container.lg">
-            <Box display="flex" justifyContent="space-between" py="10px">
-              <Box
-                w="50px"
-                h="50px"
-                borderRadius="6px"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-                fontWeight="900"
-                fontSize="22px"
-              >
-                KR_
-              </Box>
-              <Box display="flex" alignItems="center">
-                <Link href="/#about">
-                  <a>
-                    <Text mr="20px" fontWeight="500" fontSize="14px">
-                      About Me
-                    </Text>
-                  </a>
-                </Link>
-                <Link href="/#projects">
-                  <a>
-                    <Text mr="20px" fontWeight="500" fontSize="14px">
-                      Projects
-                    </Text>
-                  </a>
-                </Link>
-                <Link href="/#blog">
-                  <a>
-                    <Text mr="20px" fontWeight="500" fontSize="14px">
-                      Blog
-                    </Text>
-                  </a>
-                </Link>
-                <Link href="/#contact">
-                  <a>
-                    <Button
-                      fontSize="14px"
-                      bg="#03d277"
-                      _hover={{ backgroundColor: "#03d277" }}
-                    >
-                      Contact
-                    </Button>
-                  </a>
-                </Link>
-              </Box>
-            </Box>
-          </Container>
-        </Box>
         <Container maxW="container.md">
           <Box
             w="100%"
@@ -80,8 +28,8 @@ export default function Hero() {
           >
             <Box
               w={["100%", "100%", "50%"]}
-              mt="100px"
-              mb={["0px", "0px", "200px"]}
+              mt={["40px", "40px", "100px"]}
+              mb={["0px", "0px", "100px"]}
             >
               <Text
                 className={inter.className}
@@ -106,6 +54,7 @@ export default function Hero() {
                 love using modern technology to create exceptional user
                 experiences, and always strive to create high quality products.
               </Text>
+              {/**
               <Button
                 mt="30px"
                 bg="transparent"
@@ -118,8 +67,10 @@ export default function Hero() {
                   color: "#000",
                 }}
               >
-                Checkout my Ebook!
+                Check out my Ebook!
               </Button>
+               */}
+
               <Box display="flex" mt="20px">
                 <a
                   href={SocialMediaLinks.linkedin}
@@ -183,21 +134,26 @@ export default function Hero() {
             </Box>
             <Box
               w={["100%", "100%", "50%"]}
-              mt={["50px", "0px", "100px"]}
-              mb={["100px", "100px", "200px"]}
+              mt={["20px", "20px", "100px"]}
+              mb={["20px", "100px", "100px"]}
               display="flex"
               justifyContent={["center", "center", "flex-end"]}
             >
               <Tilt>
                 <Avatar
+                  color="#05CE78"
+                  bg="#05CE78"
                   src="/assets/profile.jpeg"
                   alt=""
                   name="K R"
-                  bg="#c4c4c4"
                   h={["200px", "200px", "300px"]}
                   w={["200px", "200px", "300px"]}
                   mt="40px"
                   border="solid 4px #05CE78"
+                  cursor="pointer"
+                  _hover={{
+                    boxShadow: "0px 0px 100px -50px #03d277",
+                  }}
                 />
               </Tilt>
             </Box>

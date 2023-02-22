@@ -5,28 +5,32 @@ import { Montserrat } from "@next/font/google";
 const montserrat = Montserrat({ subsets: ["latin"] });
 const cardsProjects = [
   {
-    url: "https://kevincodigo.com/",
-    image: "/assets/card1.png",
-  },
-  {
-    url: "https://www.riffazo.com/",
-    image: "/assets/card2.png",
-  },
-  {
-    url: "https://www.petly.la/",
-    image: "/assets/card3.png",
+    url: "",
+    image: "/assets/riffazo1.png",
+    title: "Riffazo",
+    description: "",
+    stack: "React, Node, Next, AWS",
   },
   {
     url: "",
-    image: "/assets/card4.png",
+    image: "/assets/mc3.png",
+    title: "Minerclass",
+    description: "",
+    stack: "React, Node, Next, AWS",
   },
   {
     url: "",
-    image: "/assets/card5.png",
+    image: "/assets/ud3.png",
+    title: "Udocz",
+    description: "",
+    stack: "React, Node, Next, AWS",
   },
   {
     url: "",
-    image: "/assets/card6.png",
+    image: "/assets/pt1.png",
+    title: "Petly",
+    description: "",
+    stack: "React, Node, Next, AWS",
   },
 ];
 
@@ -40,7 +44,7 @@ export default function Projects() {
             fontSize="26px"
             className={montserrat.className}
           >
-            Projects 👨‍💻
+            Projects 🚀
           </Text>
           <Box
             display="grid"
@@ -62,18 +66,41 @@ export default function Projects() {
                   key={card.url + card.image}
                 >
                   <Box
-                    w={["100%", "100%", "100%"]}
-                    h={["100px", "100px", "100px"]}
-                    backgroundColor="black.100"
-                    bgImage={`url(${card.image})`}
-                    bgPosition="center"
-                    bgSize="cover"
-                    borderRadius="10px"
-                    cursor={card.url ? "pointer" : "default"}
-                  />
-                  <Text>
-                    PROJECT {card.image} - {card.url}
-                  </Text>
+                    display="flex"
+                    flexWrap="wrap"
+                    mb={["20px", "20px", "20px"]}
+                    pb={["20px", "20px", "20px"]}
+                    borderBottom="solid 1px #636363"
+                  >
+                    <Box w={["100%", "100%", "50%"]}>
+                      <Box
+                        h={["180px", "180px", "150px"]}
+                        w="100%"
+                        maxWidth={["unset", "unset", "300px"]}
+                        backgroundColor="black.100"
+                        bgImage={`url(${card.image})`}
+                        bgPosition="center"
+                        bgSize="cover"
+                        borderRadius="10px"
+                        cursor={card.url ? "pointer" : "default"}
+                      />
+                    </Box>
+                    <Box
+                      w={["100%", "100%", "50%"]}
+                      px={["0px", "0px", "20px"]}
+                      mt={["20px", "20px", "unset"]}
+                    >
+                      <Text fontWeight="900" fontSize="18px" color="#03d277">
+                        Project: {card.title}
+                      </Text>
+                      <Text fontSize="12px" mt="10px">
+                        {card.description}
+                      </Text>
+                      <Text fontSize="12px" mt="10px">
+                        Tech stack: {card.stack}
+                      </Text>
+                    </Box>
+                  </Box>
                 </a>
               );
             })}

@@ -1,6 +1,7 @@
 import { Box, Button, Container, Text } from "@chakra-ui/react";
 import React from "react";
 import { Montserrat } from "@next/font/google";
+import Link from "next/link";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -27,20 +28,22 @@ export default function Contact() {
               Feel free to reach out if you have any questions, think we could
               work together, or just want to connect ✌️
             </Text>
-            <Button
-              mt="50px"
-              bg="#03d277"
-              color="#000"
-              border="solid 1px #03d277"
-              fontSize="12px"
-              borderRadius="0px"
-              _hover={{
-                bg: "#03d277",
-                color: "#000",
-              }}
-            >
-              kevinriverosg@gmail.com
-            </Button>
+            <Link href="mailto:kevinriverosg@gmail.com?subject=Hello Kevin. I wanna work with you! 😁">
+              <Button
+                mt="50px"
+                bg="#03d277"
+                color="#000"
+                border="solid 1px #03d277"
+                fontSize="12px"
+                borderRadius="0px"
+                _hover={{
+                  bg: "#03d277",
+                  color: "#000",
+                }}
+              >
+                kevinriverosg@gmail.com
+              </Button>
+            </Link>
           </Box>
         </Container>
       </Box>
