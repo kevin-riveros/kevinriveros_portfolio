@@ -24,7 +24,13 @@ export default function Contact() {
             >
               Get in touch
             </Text>
-            <Text textAlign="center" maxW="400px" fontSize="14px" mt="40px">
+            <Text
+              textAlign="center"
+              maxW="400px"
+              fontSize="14px"
+              mt="40px"
+              fontWeight="500"
+            >
               Feel free to reach out if you have any questions, think we could
               work together, or just want to connect ✌️
             </Text>
