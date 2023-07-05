@@ -43,9 +43,9 @@ export default function Ebook() {
                 software?
               </Text>
               <Text fontSize="14px" mb="30px">
-                Te presento "Deja de ser un programador junior", el eBook
-                definitivo para aquellos que buscan elevar su juego y hacerse
-                notar en la industria tecnológica.
+                Te presento &quot;Deja de ser un programador junior&quot; el
+                eBook definitivo para aquellos que buscan elevar su juego y
+                hacerse notar en la industria tecnológica.
               </Text>
 
               <Box
