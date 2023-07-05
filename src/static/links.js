@@ -8,3 +8,6 @@ const SocialMediaLinks = {
   email: "kevinriverosg@gmail.com",
 };
 export default SocialMediaLinks;
+
+export const HOTMART_LINK =
+  "https://pay.hotmart.com/Y83697168Q?bid=1686482720476";

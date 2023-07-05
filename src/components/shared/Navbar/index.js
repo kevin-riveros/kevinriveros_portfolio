@@ -54,7 +54,7 @@ export default function NavbarComponent() {
                 Projects
               </Text>
             </Link>
-            <Link href="/#blog">
+            <Link href="https://www.kevincode.com/blog" target="_blank">
               <Text mr="20px" fontWeight="500" fontSize="14px">
                 Blog
               </Text>
@@ -108,7 +108,7 @@ export default function NavbarComponent() {
                   Projects
                 </Text>
               </Link>
-              <Link href="/#blog" onClick={onClose}>
+              <Link href="https://www.kevincode.com/blog" target="_blank">
                 <Text mr="20px" fontWeight="500" fontSize="20px" mt="20px">
                   Blog
                 </Text>

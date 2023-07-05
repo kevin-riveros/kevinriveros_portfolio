@@ -8,6 +8,7 @@ import Blog from "./Blog";
 import Contact from "./Contact";
 import Hero from "./Hero";
 import Projects from "./Projects";
+import Ebook from "./Ebook";
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
       <NavbarComponent />
       <Hero />
       <About />
+      <Ebook />
       <Projects />
       {/*<Blog />*/}
       <Contact />

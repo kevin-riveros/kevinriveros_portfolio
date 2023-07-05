@@ -33,8 +33,8 @@ export default function Hero() {
             >
               <Text
                 className={inter.className}
-                fontWeight="300"
-                fontSize="12px"
+                fontWeight="500"
+                fontSize="14px"
                 color="#05CE78"
               >
                 Hi, my name is
