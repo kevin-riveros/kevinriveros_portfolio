@@ -47,7 +47,8 @@ export default function FooterComponent() {
                 <Icon as={AiOutlineInstagram} w="30px" h="30px" />
               </Button>
             </a>
-            <a href={SocialMediaLinks.youtube} target="_blank" rel="noreferrer">
+            {/*
+              <a href={SocialMediaLinks.youtube} target="_blank" rel="noreferrer">
               <Button
                 bg="transparent"
                 color="white"
@@ -71,6 +72,7 @@ export default function FooterComponent() {
                 <Icon as={AiFillGithub} w="30px" h="30px" />
               </Button>
             </a>
+              */}
           </Box>
         </Container>
       </Box>

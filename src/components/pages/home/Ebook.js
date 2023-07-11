@@ -13,7 +13,7 @@ import {
 import { Montserrat } from "@next/font/google";
 import { AiFillCheckSquare, AiOutlineCheck } from "react-icons/ai";
 import Link from "next/link";
-import { HOTMART_LINK } from "@/static/links";
+import { EBOOK_LINK, HOTMART_LINK } from "@/static/links";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -53,10 +53,7 @@ export default function Ebook() {
                 flexDir="column"
                 alignItems={["center", "flex-start"]}
               >
-                <Link
-                  href="https://www.kevincode.com/ebook/deja-de-ser-un-programador-junior"
-                  target="_blank"
-                >
+                <Link href={EBOOK_LINK} target="_blank">
                   <Button
                     bg="#03d277"
                     color="#000"

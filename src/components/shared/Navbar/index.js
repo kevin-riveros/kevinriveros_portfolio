@@ -1,3 +1,4 @@
+import { EBOOK_LINK } from "@/static/links";
 import {
   Box,
   Button,
@@ -64,7 +65,7 @@ export default function NavbarComponent() {
                 Contact
               </Text>
             </Link>
-            <Link href="/assets/KevinRiveros-Resume-2023.pdf" target="_blank">
+            <Link href={EBOOK_LINK} target="_blank">
               <Button
                 bg="transparent"
                 color="#03d277"
@@ -76,7 +77,7 @@ export default function NavbarComponent() {
                   color: "#000",
                 }}
               >
-                Resume
+                eBook
               </Button>
             </Link>
           </Box>
@@ -118,7 +119,7 @@ export default function NavbarComponent() {
                   Contact
                 </Text>
               </Link>
-              <Link href="/assets/KevinRiveros-Resume-2023.pdf" target="_blank">
+              <Link href={EBOOK_LINK} target="_blank">
                 <Button
                   mt="20px"
                   bg="transparent"
@@ -131,7 +132,7 @@ export default function NavbarComponent() {
                     color: "#000",
                   }}
                 >
-                  Resume
+                  eBook
                 </Button>
               </Link>
             </Box>

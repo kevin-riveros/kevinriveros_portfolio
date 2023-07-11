@@ -11,3 +11,6 @@ export default SocialMediaLinks;
 
 export const HOTMART_LINK =
   "https://pay.hotmart.com/Y83697168Q?bid=1686482720476";
+
+export const EBOOK_LINK =
+  "https://www.kevincode.com/ebook/deja-de-ser-un-programador-junior";
