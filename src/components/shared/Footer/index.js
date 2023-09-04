@@ -1,50 +1,50 @@
-import SocialMediaLinks from "@/static/links";
-import { Box, Button, Text, Container, Icon } from "@chakra-ui/react";
-import React from "react";
+import SocialMediaLinks from '@/static/links'
+import { Box, Button, Text, Container, Icon } from '@chakra-ui/react'
+import React from 'react'
 
 import {
   AiOutlineInstagram,
   AiFillLinkedin,
   AiFillYoutube,
-  AiFillGithub,
-} from "react-icons/ai";
+  AiFillGithub
+} from 'react-icons/ai'
 
-export default function FooterComponent() {
+export default function FooterComponent () {
   return (
-    <Box bg="#1C1C1C" color="#FFFFFF">
-      <Box bg="rgba(217, 217, 217, 0.06)" py="20px">
-        <Container maxW="container.lg">
-          <Box display="flex" mt="40px" justifyContent="center" pb="50px">
+    <Box bg='#000E17' color='#F2F4F3'>
+      <Box bg='rgba(217, 217, 217, 0.06)' py='20px'>
+        <Container maxW='container.lg'>
+          <Box display='flex' mt='40px' justifyContent='center' pb='50px'>
             <a
               href={SocialMediaLinks.linkedin}
-              target="_blank"
-              rel="noreferrer"
+              target='_blank'
+              rel='noreferrer'
             >
               <Button
-                bg="transparent"
-                color="white"
+                bg='transparent'
+                color='white'
                 _hover={{
-                  bg: "transparent",
-                  color: "#03d277",
+                  bg: 'transparent',
+                  color: '#96F550'
                 }}
               >
-                <Icon as={AiFillLinkedin} w="30px" h="30px" />
+                <Icon as={AiFillLinkedin} w='30px' h='30px' />
               </Button>
             </a>
             <a
               href={SocialMediaLinks.instagram}
-              target="_blank"
-              rel="noreferrer"
+              target='_blank'
+              rel='noreferrer'
             >
               <Button
-                bg="transparent"
-                color="white"
+                bg='transparent'
+                color='white'
                 _hover={{
-                  bg: "transparent",
-                  color: "#03d277",
+                  bg: 'transparent',
+                  color: '#96F550'
                 }}
               >
-                <Icon as={AiOutlineInstagram} w="30px" h="30px" />
+                <Icon as={AiOutlineInstagram} w='30px' h='30px' />
               </Button>
             </a>
             {/*
@@ -54,7 +54,7 @@ export default function FooterComponent() {
                 color="white"
                 _hover={{
                   bg: "transparent",
-                  color: "#03d277",
+                  color: "#96F550",
                 }}
               >
                 <Icon as={AiFillYoutube} w="30px" h="30px" />
@@ -66,7 +66,7 @@ export default function FooterComponent() {
                 color="white"
                 _hover={{
                   bg: "transparent",
-                  color: "#03d277",
+                  color: "#96F550",
                 }}
               >
                 <Icon as={AiFillGithub} w="30px" h="30px" />
@@ -77,5 +77,5 @@ export default function FooterComponent() {
         </Container>
       </Box>
     </Box>
-  );
+  )
 }

@@ -1,69 +1,68 @@
-import SocialMediaLinks from "@/static/links";
-import { Box, Text, Container, Avatar, Button, Icon } from "@chakra-ui/react";
-import Link from "next/link";
-import React from "react";
+import SocialMediaLinks from '@/static/links'
+import {
+  Box,
+  Text,
+  Container,
+  Avatar,
+  Button,
+  Icon,
+  Heading
+} from '@chakra-ui/react'
+import Link from 'next/link'
+import React from 'react'
 import {
   AiOutlineInstagram,
   AiFillLinkedin,
   AiFillYoutube,
-  AiFillGithub,
-} from "react-icons/ai";
-import Tilt from "react-parallax-tilt";
-import { Fira_Code } from "@next/font/google";
+  AiFillGithub
+} from 'react-icons/ai'
+import Tilt from 'react-parallax-tilt'
 
-const inter = Fira_Code({
-  subsets: ["latin"],
-});
-export default function Hero() {
+export default function Hero () {
   return (
-    <Box w="100%" bg="#1C1C1C" color="#FFFFFF" pt="72px">
+    <Box w='100%' bg='#000E17' color='#F2F4F3' pt='72px'>
       <Box>
-        <Container maxW="container.md">
+        <Container maxW='container.md'>
           <Box
-            w="100%"
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            flexDir={["column", "column", "row"]}
+            w='100%'
+            display='flex'
+            justifyContent='center'
+            alignItems='center'
+            flexDir={['column', 'column', 'row']}
           >
             <Box
-              w={["100%", "100%", "50%"]}
-              mt={["40px", "40px", "100px"]}
-              mb={["0px", "0px", "100px"]}
+              w={['100%', '100%', '50%']}
+              mt={['40px', '40px', '80px']}
+              mb={['0px', '0px', '100px']}
             >
-              <Text
-                className={inter.className}
-                fontWeight="500"
-                fontSize="14px"
-                color="#05CE78"
+              <Heading
+                mt='10px'
+                fontWeight='900'
+                fontSize='40px'
+                as='h1'
+                textAlign={['center', 'left']}
               >
-                Hi, my name is
-              </Text>
-              <Text mt="10px" fontWeight="900" fontSize="40px" as="h1">
                 Kevin Riveros
-              </Text>
+              </Heading>
               <Text
-                fontWeight="500"
-                fontSize="12px"
-                maxWidth="400px"
-                textAlign="left"
-                mt="20px"
+                fontWeight='500'
+                fontSize='28px'
+                maxWidth='400px'
+                textAlign={['center', 'left']}
+                mt='10px'
               >
-                I&apos;m a front-end engineer from Lima, Perú. I design, create
-                and support websites and applications for clients and for fun. I
-                love using modern technology to create exceptional user
-                experiences, and always strive to create high quality products.
+                Software Engineer
               </Text>
               {/**
               <Button
                 mt="30px"
                 bg="transparent"
-                color="#03d277"
-                border="solid 1px #03d277"
+                color="#96F550"
+                border="solid 1px #96F550"
                 fontSize="12px"
                 borderRadius="0px"
                 _hover={{
-                  bg: "#03d277",
+                  bg: "#96F550",
                   color: "#000",
                 }}
               >
@@ -71,88 +70,92 @@ export default function Hero() {
               </Button>
                */}
 
-              <Box display="flex" mt="20px">
+              <Box
+                display='flex'
+                mt='20px'
+                justifyContent={['center', 'flex-start']}
+              >
                 <a
                   href={SocialMediaLinks.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   <Button
-                    bg="transparent"
-                    padding="0px"
-                    margin="0px"
-                    whiteSpace="unset"
-                    color="gray.500"
+                    bg='transparent'
+                    padding='0px'
+                    margin='0px'
+                    whiteSpace='unset'
+                    color='gray.500'
                     _hover={{
-                      bg: "transparent",
-                      color: "#03d277",
+                      bg: 'transparent',
+                      color: '#96F550'
                     }}
                   >
-                    <Icon as={AiFillLinkedin} w="30px" h="30px" />
+                    <Icon as={AiFillLinkedin} w='30px' h='30px' />
                   </Button>
                 </a>
                 <a
                   href={SocialMediaLinks.instagram}
-                  target="_blank"
-                  rel="noreferrer"
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   <Button
-                    bg="transparent"
-                    padding="0px"
-                    margin="0px"
-                    whiteSpace="unset"
-                    color="gray.500"
+                    bg='transparent'
+                    padding='0px'
+                    margin='0px'
+                    whiteSpace='unset'
+                    color='gray.500'
                     _hover={{
-                      bg: "transparent",
-                      color: "#03d277",
+                      bg: 'transparent',
+                      color: '#96F550'
                     }}
                   >
-                    <Icon as={AiOutlineInstagram} w="30px" h="30px" />
+                    <Icon as={AiOutlineInstagram} w='30px' h='30px' />
                   </Button>
                 </a>
 
                 <a
                   href={SocialMediaLinks.github}
-                  target="_blank"
-                  rel="noreferrer"
+                  target='_blank'
+                  rel='noreferrer'
                 >
                   <Button
-                    bg="transparent"
-                    padding="0px"
-                    margin="0px"
-                    whiteSpace="unset"
-                    color="gray.500"
+                    bg='transparent'
+                    padding='0px'
+                    margin='0px'
+                    whiteSpace='unset'
+                    color='gray.500'
                     _hover={{
-                      bg: "transparent",
-                      color: "#03d277",
+                      bg: 'transparent',
+                      color: '#96F550'
                     }}
                   >
-                    <Icon as={AiFillGithub} w="30px" h="30px" />
+                    <Icon as={AiFillGithub} w='30px' h='30px' />
                   </Button>
                 </a>
               </Box>
             </Box>
             <Box
-              w={["100%", "100%", "50%"]}
-              mt={["20px", "20px", "100px"]}
-              mb={["20px", "100px", "100px"]}
-              display="flex"
-              justifyContent={["center", "center", "flex-end"]}
+              w={['100%', '100%', '50%']}
+              mt={['20px', '20px', '100px']}
+              mb={['100px', '100px', '100px']}
+              display='flex'
+              justifyContent={['center', 'center', 'flex-end']}
             >
               <Tilt>
                 <Avatar
-                  color="#05CE78"
-                  bg="#05CE78"
-                  src="/assets/profile.jpeg"
-                  alt=""
-                  name="K R"
-                  h={["200px", "200px", "300px"]}
-                  w={["200px", "200px", "300px"]}
-                  mt="40px"
-                  border="solid 4px #05CE78"
-                  cursor="pointer"
+                  color='black'
+                  bg='black'
+                  src='/assets/kevin-riveros-profile.png'
+                  alt='Kevin Riveros - Software Engineer'
+                  name='K R'
+                  h={['200px', '200px', '300px']}
+                  w={['200px', '200px', '300px']}
+                  mt='40px'
+                  border='solid 2px #021a2a'
+                  cursor='pointer'
                   _hover={{
-                    boxShadow: "0px 0px 100px -50px #03d277",
+                    boxShadow: '0px 0px 100px -50px #024571'
                   }}
                 />
               </Tilt>
@@ -161,5 +164,5 @@ export default function Hero() {
         </Container>
       </Box>
     </Box>
-  );
+  )
 }
