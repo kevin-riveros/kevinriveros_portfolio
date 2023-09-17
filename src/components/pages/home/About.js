@@ -37,20 +37,20 @@ export default function About () {
           </Text>
           <List spacing={3} mt='20px'>
             <ListItem>
-              <ListIcon as={AiOutlineCheck} color='#96F550' />
+              <ListIcon as={AiOutlineCheck} color='primary.500' />
               ReactJS / NextJS
             </ListItem>
             <ListItem>
-              <ListIcon as={AiOutlineCheck} color='#96F550' />
-              Javascript
+              <ListIcon as={AiOutlineCheck} color='primary.500' />
+              JavaScript
             </ListItem>
             <ListItem>
-              <ListIcon as={AiOutlineCheck} color='#96F550' />
+              <ListIcon as={AiOutlineCheck} color='primary.500' />
               NodeJS
             </ListItem>
             <ListItem>
-              <ListIcon as={AiOutlineCheck} color='#96F550' />
-              Firebase
+              <ListIcon as={AiOutlineCheck} color='primary.500' />
+              AWS
             </ListItem>
           </List>
         </Container>

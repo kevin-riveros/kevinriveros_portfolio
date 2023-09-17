@@ -88,7 +88,7 @@ export default function Hero () {
                     color='gray.500'
                     _hover={{
                       bg: 'transparent',
-                      color: '#96F550'
+                      color: 'primary.500'
                     }}
                   >
                     <Icon as={AiFillLinkedin} w='30px' h='30px' />
@@ -107,7 +107,7 @@ export default function Hero () {
                     color='gray.500'
                     _hover={{
                       bg: 'transparent',
-                      color: '#96F550'
+                      color: 'primary.500'
                     }}
                   >
                     <Icon as={AiOutlineInstagram} w='30px' h='30px' />
@@ -127,7 +127,7 @@ export default function Hero () {
                     color='gray.500'
                     _hover={{
                       bg: 'transparent',
-                      color: '#96F550'
+                      color: 'primary.500'
                     }}
                   >
                     <Icon as={AiFillGithub} w='30px' h='30px' />

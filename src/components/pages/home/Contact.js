@@ -35,17 +35,7 @@ export default function Contact () {
               work together, or just want to connect ✌️
             </Text>
             <Link href='mailto:kevinriverosg@gmail.com?subject=Hello Kevin. I wanna work with you! 😁'>
-              <Button
-                mt='50px'
-                bg='#96F550'
-                color='#000'
-                border='solid 1px #96F550'
-                fontSize='12px'
-                _hover={{
-                  bg: '#96F550',
-                  color: '#000'
-                }}
-              >
+              <Button mt='50px' variant='primary' borderRadius='50px'>
                 kevinriverosg@gmail.com
               </Button>
             </Link>

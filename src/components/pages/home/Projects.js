@@ -94,7 +94,11 @@ export default function Projects () {
                       px={['0px', '0px', '20px']}
                       mt={['20px', '20px', 'unset']}
                     >
-                      <Text fontWeight='900' fontSize='18px' color='#96F550'>
+                      <Text
+                        fontWeight='900'
+                        fontSize='18px'
+                        color='primary.500'
+                      >
                         Project: {card.title}
                       </Text>
                       <Text fontSize='12px' mt='10px' fontWeight='300'>
