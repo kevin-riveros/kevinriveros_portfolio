@@ -146,7 +146,7 @@ export default function Hero () {
                 <Avatar
                   color='black'
                   bg='black'
-                  src='/assets/kevin-riveros-profile.png'
+                  src='/assets/kevin-riveros-profile-2023.jpeg'
                   alt='Kevin Riveros - Software Engineer'
                   name='K R'
                   h={['200px', '200px', '300px']}
